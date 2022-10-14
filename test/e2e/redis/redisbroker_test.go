@@ -51,7 +51,7 @@ func TestRedisBroker(t *testing.T) {
 	args := &redis.RedisArgs{
 		Address:  Flags.RedisAddress,
 		Password: Flags.RedisPassword,
-		Stream:   Flags.RedisStream,
+		Stream:   Flags.RedisStreamPrefix,
 	}
 	backend := redis.New(args, runner.GetLogger().Sugar().Named("redis"))
 	runner.AddBroker("main", 18080, backend)

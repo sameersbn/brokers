@@ -10,7 +10,7 @@ It is expected that a Redis server will be running locally when e2e tests are ru
 Redis tests can be customized using these parameters:
 
 ```text
---redis-address my.redis.server:6379    # For using an explicit Redis server
---redis-password pA55vv04d              # To use a Redis password
---redis-stream mystream                 # To use an explicit Redis stream
+--redis-address my.redis.server:6379    # For using an explicit Redis server.
+--redis-password pA55vv04d              # To use a Redis password.
+--redis-stream-prefix test-             # Prefix used at stream tests.
 ```
